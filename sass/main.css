@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #E5F2FE;
+  background-image: url("./../img/bg-lines.svg");
+  background-size: cover;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.dashboard {
+  position: fixed;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #202020;
+  color: #fff;
+}
+
+.dashboard__nav {
+  width: 138px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-top: 40px;
+  padding-bottom: 75px;
+}
+
+.dashboard__body {
+  border-radius: 45px;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 19px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.nav__logo {
+  margin-bottom: 132px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__icons {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul.nav__icons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+ul.nav__icons-list li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav__icons-list li.nav__icons-list-last-icon {
+  margin-top: auto;
+}
+
+ul.nav__icons-list a {
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

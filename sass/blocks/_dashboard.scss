@@ -1,0 +1,27 @@
+.dashboard {
+    position: fixed;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    border-radius: 50px;
+
+    display: flex;
+
+    background: #202020; 
+    color: #fff;
+}
+
+.dashboard__nav {
+    width: 138px;
+    flex-shrink: 0;
+    padding-top: 40px;
+    padding-bottom: 75px;
+}
+
+.dashboard__body {
+    border-radius: 45px;
+    background-color: #fff;
+    flex-grow: 1;
+    margin: 19px;
+}

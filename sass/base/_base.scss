@@ -1,0 +1,19 @@
+$blue-color: #E5F2FE;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+}
+
+body {
+    background-color: $blue-color;
+    background-image: url('./../img/bg-lines.svg');
+    background-size: cover;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
