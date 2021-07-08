@@ -1,5 +1,7 @@
 // base
 @import "./base/base";
+@import "./base/titles";
+@import "./base/buttons";
 
 //blocks
 @import "./blocks/dashboard";
@@ -7,3 +9,7 @@
 @import "./blocks/logo";
 @import "./blocks/header-icon";
 @import "./blocks/user-profile";
+@import "./blocks/portfolio";
+@import "./blocks/card-balance";
+@import "./blocks/icon-show-more";
+@import "./blocks/assets"

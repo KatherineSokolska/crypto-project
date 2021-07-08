@@ -1,0 +1,27 @@
+%round {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #A0A9B2;
+}
+
+.icon-show-more {
+    @extend %round;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -8px;
+        @extend %round;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        @extend %round;
+    }
+}

@@ -32,6 +32,31 @@ a {
   text-decoration: none;
 }
 
+.title-1 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.title-2 {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-transform: capitalize;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .dashboard {
   position: fixed;
   top: 40px;
@@ -73,12 +98,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.dashboard__header-title {
-  font-weight: bold;
-  font-size: 35px;
-  letter-spacing: 0.02em;
+  margin-bottom: 28px;
 }
 
 .dashboard__header-icons {
@@ -88,6 +108,19 @@ a {
 }
 
 .dashboard__header-icons > * + * {
+  margin-left: 16px;
+}
+
+.dashboard__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard__cards > * + * {
   margin-left: 16px;
 }
 
@@ -173,10 +206,6 @@ ul.nav__icons-list a {
 }
 
 .header-icon {
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
   background: #F2F5FA;
   width: 48px;
   height: 48px;
@@ -239,10 +268,6 @@ ul.nav__icons-list a {
 
 .user-profile__nav-button {
   position: relative;
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
   padding-right: 41px;
 }
 
@@ -257,5 +282,105 @@ ul.nav__icons-list a {
   background-image: url(./../../img/arr-down.svg);
   width: 12px;
   height: 7px;
+}
+
+.portfolio__header {
+  margin-bottom: 24px;
+}
+
+.portfolio__card {
+  width: 486px;
+  height: 244px;
+  background: #E5F2FE;
+  padding: 26px 28px 25px 35px;
+  position: relative;
+  border-radius: 24px;
+}
+
+.balance-card__balance-value {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.balance-card__balance-desc {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.balance-card__settings {
+  height: 22px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 37px;
+  right: 28px;
+}
+
+.balance-card__periods {
+  position: absolute;
+  bottom: 25px;
+  left: 34px;
+}
+
+.balance-card__periods > * + * {
+  margin-left: 24px;
+}
+
+.balance-card__period-btn {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #ACBCCD;
+}
+
+.balance-card__period-btn--active {
+  color: #040404;
+}
+
+.balance-card__chart {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 27px;
+}
+
+.icon-show-more, .icon-show-more::before, .icon-show-more::after {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #A0A9B2;
+}
+
+.icon-show-more {
+  position: relative;
+}
+
+.icon-show-more::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -8px;
+}
+
+.icon-show-more::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -8px;
 }
 /*# sourceMappingURL=main.css.map */

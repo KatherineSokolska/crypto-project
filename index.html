@@ -32,8 +32,10 @@
             </nav>
         </div>
         <div class="dashboard__body">
+
+            <!-- dashboard header -->
             <div class="dashboard__header">
-                <h1 class="dashboard__header-title">
+                <h1 class="title-1">
                     Overview
                 </h1>
                 <div class="dashboard__header-icons">
@@ -52,8 +54,61 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard__cards"></div>
+            <!-- // dashboard header -->
+
+            <!-- dashboard cards -->
+            <div class="dashboard__cards">
+                <div class="portfolio">
+                    <div class="portfolio__header">
+                        <h2 class="title-2">portfolio</h2>
+                    </div>
+
+                    <!-- portfolio-card -->
+                    <div class="portfolio__card">
+
+                        <!-- balance-card -->
+                        <div class="balance-card">
+                            <div class="balance-card__balance">
+                                <div class="balance-card__balance-value">$ 17 863.41</div>
+                                <div class="balance-card__balance-desc">Portfolio balance</div>
+                            </div>
+
+                            <button class="balance-card__settings">
+                                <div class="icon-show-more"></div>
+                            </button>
+
+                            <img src="./img/chart.svg" alt="Chart" class="balance-card__chart">
+
+                            <div class="balance-card__periods">
+                                <button class="balance-card__period-btn">1H</button>
+                                <button class="balance-card__period-btn">24H</button>
+                                <button class="balance-card__period-btn balance-card__period-btn--active">1W</button>
+                                <button class="balance-card__period-btn">1M</button>
+                                <button class="balance-card__period-btn">1Y</button>
+                                <button class="balance-card__period-btn">ALL</button>
+                            </div>
+
+                        </div>
+                        <!-- // balance-card -->
+
+                    </div>
+                    <!-- // portfolio-card -->
+
+                </div>
+                <div class="assets">
+                    <div class="assets__header">
+                        <h2 class="title-2">Assets</h2>
+                        <button>
+                            <img src="./img/top-icons/filter.svg" alt="Filter">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- // dashboard cards -->
+
+            <!-- dashboard market -->
             <div class="dashboard__market"></div>
+            <!-- // dashboard market -->
         </div>
     </div>
 

@@ -27,17 +27,11 @@
     padding: 26px 56px 54px 68px;
 }
 
-
 .dashboard__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.dashboard__header-title {
-    font-weight: bold;
-    font-size: 35px;
-    letter-spacing: 0.02em;
+    margin-bottom: 28px;
 }
 
 .dashboard__header-icons {
@@ -49,7 +43,12 @@
 }
 
 .dashboard__cards{
-
+    display: flex;
+    justify-content: space-between;
+    
+    &>*+* {
+        margin-left: 16px;
+    }
 }
 
 .dashboard__market {
