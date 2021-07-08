@@ -9,7 +9,6 @@
     display: flex;
 
     background: #202020; 
-    color: #fff;
 }
 
 .dashboard__nav {
@@ -24,4 +23,35 @@
     background-color: #fff;
     flex-grow: 1;
     margin: 19px;
+
+    padding: 26px 56px 54px 68px;
+}
+
+
+.dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard__header-title {
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+}
+
+.dashboard__header-icons {
+    display: flex;
+
+    &>*+* {
+        margin-left: 16px;
+    }
+}
+
+.dashboard__cards{
+
+}
+
+.dashboard__market {
+
 }

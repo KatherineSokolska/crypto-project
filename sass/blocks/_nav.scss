@@ -35,6 +35,11 @@ ul.nav__icons-list {
     li {
         margin: 0;
         padding: 0;
+        margin-bottom: 61px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         &.nav__icons-list-last-icon {
             margin-top: auto;
