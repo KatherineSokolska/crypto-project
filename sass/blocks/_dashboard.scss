@@ -8,7 +8,7 @@
 
     display: flex;
 
-    background: #202020; 
+    background: #202020;
 }
 
 .dashboard__nav {
@@ -42,17 +42,22 @@
     }
 }
 
-.dashboard__cards{
+.dashboard__cards {
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
 
     margin-bottom: 49px;
-    
+
     &>*+* {
         margin-left: 16px;
     }
 }
 
 .dashboard__market {
+    display: flex;
 
+    & > * + * {
+       margin-left: 20px; 
+    }
 }

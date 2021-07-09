@@ -127,11 +127,24 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-bottom: 49px;
 }
 
 .dashboard__cards > * + * {
   margin-left: 16px;
+}
+
+.dashboard__market {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard__market > * + * {
+  margin-left: 20px;
 }
 
 .nav {
@@ -302,8 +315,14 @@ ul.nav__icons-list a {
   margin-left: -5px;
 }
 
+.portfolio {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .portfolio__card {
-  width: 486px;
+  min-width: 486px;
   height: 244px;
   background: #E5F2FE;
   padding: 26px 28px 25px 35px;
@@ -391,7 +410,7 @@ ul.nav__icons-list a {
 
 .asset-card {
   position: relative;
-  width: 194px;
+  min-width: 194px;
   height: 244px;
   background: #E5DEF0;
   font-size: 15px;
@@ -410,6 +429,9 @@ ul.nav__icons-list a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .asset-card--ltc {
@@ -511,6 +533,12 @@ ul.nav__icons-list a {
   bottom: -8px;
 }
 
+.market {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .market__header {
   margin-bottom: 20px;
   display: -webkit-box;
@@ -608,7 +636,6 @@ ul.nav__icons-list a {
 
 .market-table td {
   padding-bottom: 20px;
-  padding: 0;
 }
 
 .market-table td:not(:last-child) {
@@ -636,6 +663,96 @@ ul.nav__icons-list a {
   font-size: 17px;
   line-height: 25px;
   letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.earn-free {
+  position: relative;
+  z-index: 3;
+  padding: 60px 34px 60px 40px;
+  width: 410px;
+  height: 363px;
+  background: #222222;
+  border-radius: 30px;
+  color: #fff;
+  background-image: url("./../../img/earn-card/bg-corner-els.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.earn-free__wrapper {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.earn-free__wrapper::before {
+  content: '';
+  display: block;
+  width: 345px;
+  height: 48px;
+  background: #DFDFE3;
+  border-radius: 24px;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+.earn-free__wrapper::before {
+  content: '';
+  display: block;
+  width: 295px;
+  height: 48px;
+  background: #F0F0F1;
+  border-radius: 24px;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.earn-free__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+}
+
+.earn-free__title-free {
+  display: inline-block;
+  background-image: url("./../../img/earn-card/free.svg");
+  width: 98px;
+  height: 75px;
+  vertical-align: middle;
+}
+
+.earn-free__subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+  margin-bottom: 11px;
+}
+
+.earn-free__text {
+  margin-bottom: 35px;
+}
+
+.earn-free__button {
+  display: inline-block;
+  height: 46px;
+  background: #BCDFFF;
+  border-radius: 23px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 46px;
+  font-weight: 600;
+  font-size: 16px;
   color: #000000;
 }
 /*# sourceMappingURL=main.css.map */

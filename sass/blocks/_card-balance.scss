@@ -1,22 +1,17 @@
-.portfolio {}
-
-.portfolio__header {}
+.portfolio {
+    flex-grow: 1;
+}
 
 .portfolio__card {
-    width: 486px;
+    min-width: 486px;
     height: 244px;
     background: #E5F2FE;
     padding: 26px 28px 25px 35px;
     position: relative;
     border-radius: 24px;
     margin-right: 10px;
-
+    
 }
-
-.balance-card {
-}
-
-.balance-card__balance {}
 
 .balance-card__balance-value {
     font-weight: 600;
