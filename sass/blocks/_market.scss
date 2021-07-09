@@ -1,0 +1,17 @@
+.market {}
+
+.market__header {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.market__header-buttons {
+    display: flex;
+
+    &>*+* {
+        margin-left: 16px;
+    }
+}
+

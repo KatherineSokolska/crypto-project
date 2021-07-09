@@ -45,6 +45,8 @@
 .dashboard__cards{
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 49px;
     
     &>*+* {
         margin-left: 16px;

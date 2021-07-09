@@ -26,7 +26,8 @@
                         <li><a href="#"><img src="./img/nav-icons/icon-graphs.svg" alt="Charts"></a></li>
                         <li><a href="#"><img src="./img/nav-icons/icon-cube.svg" alt="Cube"></a></li>
                         <li><a href="#"><img src="./img/nav-icons/icon-person.svg" alt="Account"></a></li>
-                        <li class="nav__icons-list-last-icon"><a href="#"><img src="./img/nav-icons/icon-logOut.svg" alt="Log Out"></a></li>
+                        <li class="nav__icons-list-last-icon"><a href="#"><img src="./img/nav-icons/icon-logOut.svg"
+                                    alt="Log Out"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -56,11 +57,12 @@
             </div>
             <!-- // dashboard header -->
 
+
             <!-- dashboard cards -->
             <div class="dashboard__cards">
                 <div class="portfolio">
                     <div class="portfolio__header">
-                        <h2 class="title-2">portfolio</h2>
+                        <h2 class="title-3">portfolio</h2>
                     </div>
 
                     <!-- portfolio-card -->
@@ -73,9 +75,11 @@
                                 <div class="balance-card__balance-desc">Portfolio balance</div>
                             </div>
 
-                            <button class="balance-card__settings">
-                                <div class="icon-show-more"></div>
-                            </button>
+                            <div class="balance-card__settings">
+                                <button class="button-more">
+                                    <span class="button-more-icon"></span>
+                                </button>
+                            </div>
 
                             <img src="./img/chart.svg" alt="Chart" class="balance-card__chart">
 
@@ -95,19 +99,214 @@
                     <!-- // portfolio-card -->
 
                 </div>
+
+                <!-- assets -->
                 <div class="assets">
                     <div class="assets__header">
-                        <h2 class="title-2">Assets</h2>
+                        <h2 class="title-3">Assets</h2>
                         <button>
                             <img src="./img/top-icons/filter.svg" alt="Filter">
                         </button>
                     </div>
+                    <div class="assets__cards">
+
+                        <!-- asset-card -->
+                        <div class="asset-card">
+                            <div class="asset-card__header">
+                                <div class="asset-card__value">1.25 BTC</div>
+                                <div class="asset-card__fiat">$ 2948.04</div>
+                                <div class="asset-card__settings">
+                                    <button class="button-more">
+                                        <span class="button-more-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="asset-card__footer">
+                                <div class="asset-card__icon">
+                                    <img src="./img/coins/bitcoin.svg" alt="Bitcoin">
+                                </div>
+                                <div class="asset-card__income">+ 0.14%</div>
+                            </div>
+                        </div>
+                        <!-- //  asset-card -->
+
+                        <!-- asset-card -->
+                        <div class="asset-card asset-card--ltc">
+                            <div class="asset-card__header">
+                                <div class="asset-card__value">0.32 LTC</div>
+                                <div class="asset-card__fiat">$ 2948.04</div>
+                                <div class="asset-card__settings">
+                                    <button class="button-more">
+                                        <span class="button-more-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="asset-card__footer">
+                                <div class="asset-card__icon">
+                                    <img src="./img/coins/litecoin.svg" alt="Litecoin">
+                                </div>
+                                <div class="asset-card__income">+ 0.31%</div>
+                            </div>
+                        </div>
+                        <!-- //  asset-card -->
+
+                        <!-- asset-card -->
+                        <div class="asset-card asset-card--eth">
+                            <div class="asset-card__header">
+                                <div class="asset-card__value">1.25 ETH</div>
+                                <div class="asset-card__fiat">$ 2948.04</div>
+                                <div class="asset-card__settings">
+                                    <button class="button-more">
+                                        <span class="button-more-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="asset-card__footer">
+                                <div class="asset-card__icon">
+                                    <img src="./img/coins/ethereum.svg" alt="Etherium">
+                                </div>
+                                <div class="asset-card__income">+ 0.27%</div>
+                            </div>
+                        </div>
+                        <!-- //  asset-card -->
+                    </div>
                 </div>
+                <!-- // assets -->
             </div>
             <!-- // dashboard cards -->
 
+
             <!-- dashboard market -->
-            <div class="dashboard__market"></div>
+            <div class="dashboard__market">
+
+                <!-- market -->
+                <div class="market">
+                    <div class="market__header">
+                        <div class="title-2">Market is down 0.80%</div>
+
+                        <div class="market__header-buttons">
+                            <button class="dropdown-btn">24h</button>
+                            <button class="dropdown-btn">Top gainers</button>
+                        </div>
+                    </div>
+
+                    <!-- market-table -->
+                    <div class="market__table">
+                        <table class="market-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th> 
+                                    <th>Price</th>
+                                    <th>Change </th>
+                                    <th>Market Cap</th>
+                                    <th>Watch </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+
+                                        <!-- coin -->
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img src="./img/coins/band-protocol.svg" alt="Band Protocol">
+                                            </div>
+                                            <div class="coin__info">
+                                                <div class="coin__title">Band Protocol</div>
+                                                <div class="coin__desc">BAND</div>
+                                            </div>
+                                        </div>
+                                        <!-- // coin -->
+                                        
+                                    </td>
+                                    <td class="market-table__price">$2.42</td>
+                                    <td class="market-table__change">+13.38%</td>
+                                    <td class="market-table__cap">$399.8M</td>
+                                    <td class="market-table__watch"><button><img src="./img/star.png" alt="Star"></button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <!-- coin -->
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img src="./img/coins/ve.svg" alt="Band Protocol">
+                                            </div>
+                                            <div class="coin__info">
+                                                <div class="coin__title">VeChain</div>
+                                                <div class="coin__desc">VET</div>
+                                            </div>
+                                        </div>
+                                        <!-- // coin -->
+                                        
+                                    </td>
+                                    <td class="market-table__price">$7.48</td>
+                                    <td class="market-table__change">+11.19%</td>
+                                    <td class="market-table__cap">$152.5M</td>
+                                    <td class="market-table__watch"><button><img src="./img/star.png" alt="Star"></button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <!-- coin -->
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img src="./img/coins/aave.svg" alt="Band Protocol">
+                                            </div>
+                                            <div class="coin__info">
+                                                <div class="coin__title">Aave</div>
+                                                <div class="coin__desc">AAVE</div>
+                                            </div>
+                                        </div>
+                                        <!-- // coin -->
+                                        
+                                    </td>
+                                    <td class="market-table__price">$0.0184</td>
+                                    <td class="market-table__change">+7.57%</td>
+                                    <td class="market-table__cap">$1.2B</td>
+                                    <td class="market-table__watch"><button><img src="./img/star.png" alt="Star"></button></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <!-- coin -->
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img src="./img/coins/band-protocol.svg" alt="Band Protocol">
+                                            </div>
+                                            <div class="coin__info">
+                                                <div class="coin__title">Waves</div>
+                                                <div class="coin__desc">WAVES</div>
+                                            </div>
+                                        </div>
+                                        <!-- // coin -->
+                                        
+                                    </td>
+                                    <td class="market-table__price">$30.68</td>
+                                    <td class="market-table__change">+6.80%</td>
+                                    <td class="market-table__cap">$399.8M</td>
+                                    <td class="market-table__watch"><button><img src="./img/star.png" alt="Star"></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- // market-table -->
+
+                </div>
+                <!-- // market -->
+
+                <!-- earn-free -->
+                <div class="earn-free">
+                    <div class="earn-free__title"></div>
+                    <div class="earn-free__text"></div>
+                    <div class="earn-free__button"></div>
+                </div>
+                <!-- // earn-free -->
+
+            </div>
             <!-- // dashboard market -->
         </div>
     </div>

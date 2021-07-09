@@ -1,0 +1,54 @@
+.market-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+        text-align: left;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #8290A0;
+
+        padding-bottom: 20px;
+    }
+
+    td {
+        padding-bottom: 20px;
+        padding: 0;
+    }
+
+    td:not(:last-child) {
+        padding-right: 15px;
+    }
+
+}
+
+.market-table__price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.market-table__change {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: #4BA582;
+}
+
+.market-table__cap {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
+.market-table__watch {}

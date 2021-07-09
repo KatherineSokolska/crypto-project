@@ -42,6 +42,15 @@ a {
 }
 
 .title-2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.title-3 {
   font-weight: 600;
   font-size: 27px;
   line-height: 1.5;
@@ -118,6 +127,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 49px;
 }
 
 .dashboard__cards > * + * {
@@ -285,7 +295,11 @@ ul.nav__icons-list a {
 }
 
 .portfolio__header {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.portfolio__card {
+  margin-left: -5px;
 }
 
 .portfolio__card {
@@ -295,6 +309,7 @@ ul.nav__icons-list a {
   padding: 26px 28px 25px 35px;
   position: relative;
   border-radius: 24px;
+  margin-right: 10px;
 }
 
 .balance-card__balance-value {
@@ -315,17 +330,6 @@ ul.nav__icons-list a {
 }
 
 .balance-card__settings {
-  height: 22px;
-  width: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
   top: 37px;
   right: 28px;
@@ -359,28 +363,279 @@ ul.nav__icons-list a {
   bottom: 27px;
 }
 
-.icon-show-more, .icon-show-more::before, .icon-show-more::after {
+.assets {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.assets__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.assets__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assets__cards > * + * {
+  margin-left: 30px;
+}
+
+.asset-card {
+  position: relative;
+  width: 194px;
+  height: 244px;
+  background: #E5DEF0;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  border-radius: 24px;
+  padding: 30px 24px 26px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.asset-card--ltc {
+  background: #D6EDDA;
+}
+
+.asset-card--eth {
+  background: #F6F0D8;
+}
+
+.asset-card__value {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
+
+.asset-card__fiat {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.asset-card__settings {
+  position: absolute;
+  top: 37px;
+  right: 24px;
+}
+
+.asset-card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.asset-card__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 14px;
+}
+
+.asset-card__income {
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #896AB9;
+}
+
+.button-more {
+  height: 22px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-more-icon, .button-more-icon::before, .button-more-icon::after {
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background: #A0A9B2;
 }
 
-.icon-show-more {
+.button-more-icon {
   position: relative;
 }
 
-.icon-show-more::before {
+.button-more-icon::before {
   content: '';
   display: block;
   position: absolute;
   top: -8px;
 }
 
-.icon-show-more::after {
+.button-more-icon::after {
   content: '';
   display: block;
   position: absolute;
   bottom: -8px;
+}
+
+.market__header {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.market__header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.market__header-buttons > * + * {
+  margin-left: 16px;
+}
+
+.dropdown-btn {
+  height: 44px;
+  line-height: 44px;
+  padding-left: 18px;
+  padding-right: 38px;
+  border: 1px solid #EFF2F4;
+  border-radius: 22px;
+  position: relative;
+}
+
+.dropdown-btn::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 18px;
+  background-image: url("./../../img/arr-down.svg");
+}
+
+.coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coin__icon {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.coin__title {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.coin__desc {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #7A899A;
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.market-table th {
+  text-align: left;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #8290A0;
+  padding-bottom: 20px;
+}
+
+.market-table td {
+  padding-bottom: 20px;
+  padding: 0;
+}
+
+.market-table td:not(:last-child) {
+  padding-right: 15px;
+}
+
+.market-table__price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.market-table__change {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #4BA582;
+}
+
+.market-table__cap {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #000000;
 }
 /*# sourceMappingURL=main.css.map */
